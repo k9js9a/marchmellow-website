@@ -7,7 +7,14 @@ const compat = new FlatCompat({
 
 export default tseslint.config(
   {
-    ignores: [".next", "generated", "prisma"],
+    ignores: [
+      "node_modules",
+      "public",
+      ".next",
+      ".husky",
+      "generated",
+      "prisma",
+    ],
   },
   ...compat.extends("next/core-web-vitals"),
   {
